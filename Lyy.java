@@ -1,15 +1,19 @@
-import java.util.Scanner;
-public class Lyy{
-public static void main (String[]args)
-{
-  Scanner sc=new Scanner(System.in);
-  System.out.println("enter the number");
-  int n=sc.nextInt();
-  for(int i=1;i<=n;i++){
-   for(int j=1;j<=i;j++){
-    System.out.print(j);
-   }
-  System.out.println();
-  }
- }
+public class Lyy {
+    public static void main(String[] args) {
+        String s1 = "456";
+        String s2 = "123";
+
+        int a = 0;
+        for (int i = 0; i < s1.length(); i++) {
+            a = a * 10 + (s1.charAt(i) - '0');
+        }
+
+        int b = 0;
+        for (int i = 0; i < s2.length(); i++) {
+            b = b * 10 + (s2.charAt(i) - '0');
+        }
+
+        int sum = a + b;
+        System.out.println("Sum of two numbers: " + sum);
+    }
 }
